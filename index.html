@@ -1,90 +1,190 @@
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wamail (mai - juillet 2026)</title>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+body{
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.fenetre{
+    width:90%;
+    max-width:850px;
+    background:#111;
+    border:1px solid #2b2b2b;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 35px rgba(255,255,255,.08);
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+/* ---------- Interface Mail ---------- */
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.barre-mail{
+    background:#181818;
+    border-bottom:1px solid #2a2a2a;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 18px;
+    border-bottom:1px solid #2a2a2a;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.btn-envoyer{
+    background:#1976ff;
+    color:#fff;
+    border:none;
+    padding:8px 18px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:bold;
+    opacity:.55;
+    cursor:not-allowed;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.etat{
+    color:#888;
+    font-size:14px;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.champ{
+    display:flex;
+    align-items:center;
+    padding:12px 18px;
+    border-bottom:1px solid #242424;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.champ span{
+    width:70px;
+    color:#cfcfcf;
+    font-weight:bold;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.champ input{
+    flex:1;
+    background:transparent;
+    border:none;
+    color:white;
+    font-size:15px;
+    outline:none;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+/* ---------- Contenu ---------- */
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.contenu{
+    padding:40px;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+h1{
+    text-align:center;
+    color:#fff;
+    margin-bottom:25px;
+    font-size:34px;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.texte{
+    color:#d0d0d0;
+    font-size:18px;
+    line-height:1.8;
+    text-align:center;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.logo{
+    display:block;
+    width:140px;
+    margin:35px auto 15px auto;
+    opacity:.95;
+    transition:.3s;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+.logo:hover{
+    transform:scale(1.05);
+    opacity:1;
+}
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+footer{
+    text-align:center;
+    color:#666;
+    font-size:12px;
+    padding:18px;
+    border-top:1px solid #222;
+}
+</style>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+</head>
+<body>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+<div class="fenetre">
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+    <div class="barre-mail">
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <div class="toolbar">
+            <button class="btn-envoyer" disabled>Envoyer</button>
+            <span class="etat">Brouillon</span>
+        </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <div class="champ">
+            <span>De :</span>
+            <input type="text" value="contact@wamail.fr" readonly>
+        </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <div class="champ">
+            <span>À :</span>
+            <input type="text" value="Tous les utilisateurs" readonly>
+        </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <div class="champ">
+            <span>Objet :</span>
+            <input type="text" value="Fermeture définitive de Wamail" readonly>
+        </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+    </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+    <div class="contenu">
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <h1>Wamail</h1>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <div class="texte">
+            Ce site a changé de peopriétaire et de lien<br><br>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+            le nouveau lien ci dessous est le nouveau lien de votre messagerie. malheureusement, vous devrez recréer un compte<br><br>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+            https://devffin.github.io/wamail/ <strong>de Diffin</strong> et le nouveau lien de <strong>Wamail</strong> sur <strong>Diffin</strong> <br><br>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+            Merci de nous avoir suivis de <strong>mai à juillet 2026</strong> et nous vous souhaitons une excellente visite sur le nouveau <strong>Wamail</strong>.<br><br>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+            Le groupe <strong>Yotvin</strong> l'ancienne équipe de Wamail
+            <br><br>
+            <strong>Yotvin</strong><br>
+            <strong>tims</strong><br>
+        </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+        <img src="logo.png" alt="Logo Wamail" class="logo">
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+    </div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+    <footer>
+        Merci de votre compréhension.
+    </footer>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
+</div>
 
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
-le site WaMail a été racheté par Devffin. Le nouveau lien est https://devffin.github.io/wamail/
-
+</body>
+</html>
